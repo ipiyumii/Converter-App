@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".KgToGram">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="88dp"
+        android:text="Convert Gram to Kg"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtGram"
+        android:layout_width="345dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="33dp"
+        android:background="@color/design_default_color_background"
+        android:ems="10"
+        android:hint="Enter value in Grams"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/btnConvert"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="277dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="67dp"
+        android:background="@color/material_dynamic_neutral_variant30"
+        android:stateListAnimator="@android:animator/fade_out"
+        android:text="Convert to KG"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/material_dynamic_neutral20"
+        android:textStyle="bold"
+        app:iconTint="@color/material_dynamic_neutral10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGram"
+        app:rippleColor="@color/material_dynamic_neutral20" />
+
+    <EditText
+        android:id="@+id/txtKg"
+        android:layout_width="345dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="33dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConvert" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
